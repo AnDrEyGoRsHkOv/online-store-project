@@ -1,0 +1,103 @@
+.page-name
+    height: 148px
+    background: #f8f3f4
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__heading
+        color: $colorSelect
+    &__ul
+        display: flex
+        list-style-type: none
+
+    &__li:last-child .page-name__link
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        color: #F16D7F
+
+    &__li:not(:last-child)::after
+        content: '/'
+        padding-left: 8px
+        padding-right: 8px
+    &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $colorSelect
+    &:last-child
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        color: #F16D7F
+
+.sort
+    padding-top: 39px
+    padding-bottom: 64px
+
+.filter
+    position: relative
+    height: 24px
+    &__name
+        outline: none
+        display: block
+    &__main
+        position: absolute
+        background-color: #fff
+        padding: 13px 16px 16px
+        width: 360px
+        box-sizing: border-box
+        outline: none
+        z-index: 2
+        &[open]
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        &[open] .filter__name
+            color: $colorSelect
+        &[open] svg path
+            fill: $colorSelect
+    &__sort
+        margin-top: 16px
+        &[open] .filter__category
+            color: $colorSelect
+
+    &__category
+        border-left: 5px solid $colorSelect
+        display: block
+        &-name
+            display: block
+            height: 37px
+            border-bottom: 1px solid #EBEBEB
+            padding-left: 11px
+            line-height: 37px
+
+    &__content-ul
+        list-style-type: none
+        padding-left: 16px
+        padding-right: 24px
+
+    &__content-links
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-bottom: 11px
+        display: block
+        &:hover
+            color: $colorSelect
+
+.product:hover
+    transform: scale(1.05)
+
+.param
+    .dop__details
+        position: relative
+        display: flex
+        justify-content: center
+        gap: 38px
+        color: #6F6E6E
+        z-index: 2
+        font-size: 14px

@@ -1,0 +1,303 @@
+@import vars
+@import mixins
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Lato', sans-serif
+
+a
+    text-decoration: none
+
+.summary
+    display: block
+
+.summary::-webkit-detalis-marker
+    display: none
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.container
+    max-width: 1140px
+    margin: auto
+
+.header
+    background: #222222
+    height: 75px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__right
+        display: flex
+        column-gap: 33px
+        align-items: center
+
+.search
+    margin-left: 41px
+
+.promo
+    background: #F1E4E6
+    display: flex
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+
+    &__left
+        width: 50%
+
+    &__right
+        width: 50%
+
+    &__img
+        width: 100%
+
+    &__content
+        margin-top: 30%
+        border-left: 12px solid $colorSelect
+        padding-left: 16px
+
+    &__text
+        color: $colorSelect
+
+    &__h1
+        font-weight: 900
+        font-size: 48px
+        line-height: 58px
+        color: #222222
+
+    &__heading
+        font-weight: bold
+        font-size: 32px
+        line-height: 38px
+        color: #222222
+
+.sale
+    padding-top: 64px
+    padding-bottom: 96px
+
+    &__box
+        display: flex
+        margin-bottom: 30px
+
+    &__item
+        display: flex
+        position: relative
+
+    &__content
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__text
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #FFFFFF
+
+    &__heading
+        font-weight: bold
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        color: $colorSelect
+
+    &__img
+        width: 100%
+
+    &__item:not(:last-child)
+        margin-right: 30px
+
+.tac
+    text-align: center
+
+.featured-items__text
+    font-size: 14px
+    line-height: 17px
+    color: #9F9F9F
+    margin-bottom: 48px
+
+.button__products
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #F26376
+    border: 1px solid #FF6A6A
+    padding: 13.5px 38.5px
+    display: inline-block
+    margin-top: 63px
+
+.button__products:hover
+    color: #F26376
+
+.button
+    text-align: center
+
+.product-box
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.product:hover
+    transform: scale(1.05)
+
+.product
+    width: 360px
+    color: #5D5D5D
+    position: relative
+    margin-bottom: 30px
+    transition: transform .4s
+
+    &:hover .product__img
+        filter: brightness(50%)
+
+    &:hover .product__add
+        display: flex
+
+    &__content
+        padding: 24px 16px 20px
+
+    &__name
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+
+    &__text
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+        margin-top: 12px
+        margin-bottom: 18px
+
+    &__price
+        font-size: 16px
+        line-height: 19px
+        color: $colorSelect
+
+    &__add
+        display: none
+        height: 44px
+        justify-content: center
+        align-items: center
+        padding-left: 14px
+        padding-right: 16px
+        border: 1px solid #fff
+        line-height: 44px
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+        position: absolute
+        top: 188px
+        left: 111px
+
+    &__add:hover
+        color: black
+        background-color: #fff
+
+    &__add:hover .product__cart path
+        fill: black
+
+    &__cart
+        margin-right: 11px
+
+.footer__top
+    background: #222222
+    height: 341px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 95px
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.footer__heading
+    font-size: 19.96px
+    line-height: 24px
+    color: #FBFBFB
+    text-align: center
+    margin: 16px
+
+.text__footer
+    font-size: 13.972px
+    line-height: 17px
+    text-align: center
+    color: #FBFBFB
+    display: flex
+
+.footer__info
+    text-align: center
+    margin-bottom: 104px
+    margin-top: 104px
+
+.input__text
+    width: 256px
+    height: 49px
+    background: #E1E1E1
+    border-top-left-radius: 24px
+    border-bottom-left-radius: 24px
+
+.subscribe__button
+    background-color: #F26376
+    border-top-right-radius: 24px
+    border-bottom-right-radius: 24px
+    width: 100px
+    height: 49px
+    border: none
+    +font(18px, white)
+
+.button-back:hover
+    background-color: #c25160
+
+.subscribe
+    height: 448px
+    background: url("../img/photo.png"), url("../img/subscribephoto.jpg") no-repeat center
+    display: flex
+
+    &__figure
+        text-align: center
+        width: 360px
+
+    &__box
+        width: 50%
+        +flexCenter
+
+.footer__bottom
+    background: #222222
+    height: 79px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.footer__copy
+    color: #FBFBFB
+
+.footer__icons
+    display: flex
+    gap: 8px
+
+.footer__icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+    background-color: #fff
+    color: black
+
+    &:hover
+        color: white
+        background-color: #F26376
+
+@import catalog
+@import product

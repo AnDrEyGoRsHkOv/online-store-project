@@ -1,0 +1,164 @@
+.product:hover
+    transform: scale(1.05)
+
+.product__collection
+    display: flex
+    height: 777px
+    justify-content: center
+    background: #F7F7F7
+
+.content__collection
+    background: url("../img/foto__collection"), url("../img/foto__collection") no-repeat center
+.hr
+    border: 1px solid #EAEAEA
+    width: 360px
+.menu__catalog
+    height: 601px
+    margin-bottom: 128px
+
+.menu__product
+    background: #FFFFFF
+
+    .heading__collection
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #F16D7F
+        text-align: center
+        margin-top: 64px
+        margin-bottom: 12px
+    .heading__collection_mini
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+        text-align: center
+        margin-top: 12px
+        margin-bottom: 48px
+    .text__content
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5E5E5E
+        text-align: center
+    .product__price
+        color: #F16D7F
+        text-align: center
+        margin-top: 32px
+        margin-bottom: 65px
+    .param__product
+        position: relative
+        display: flex
+        justify-content: center
+        gap: 38px
+        color: #6F6E6E
+        z-index: 2
+        margin-top: 65px
+        margin-bottom: 48px
+
+ /* стили основного контейнера слайдера */
+    .slider
+        position: relative
+        overflow: hidden
+        max-width: 600px
+        margin-left: auto
+        margin-right: auto
+
+/* стили для обёртки, в которой заключены слайды */
+
+    &__wrapper
+        position: relative
+        overflow: hidden
+
+/* стили для контейнера слайдов */
+
+    &__items
+        display: flex
+        transition: transform 0.7s ease
+
+/* стили для слайдов */
+
+    &__item
+        flex: 0 0 100%
+        max-width: 100%
+
+/* стили для кнопок "вперед" и "назад" */
+
+    &__control
+        position: absolute
+        top: 50%
+        display: none
+        align-items: center
+        justify-content: center
+        width: 40px
+        color: #fff
+        text-align: center
+        opacity: 0.5
+        height: 50px
+        transform: translateY(-50%)
+        background: rgba(0, 0, 0, 0.5)
+
+    &__control_show
+        display: flex
+
+    &__control:hover,
+
+    &__control:focus
+        color: #fff
+        text-decoration: none
+        outline: 0
+        opacity: 0.9
+
+    &__control_prev
+        left: 0
+
+    &__control_next
+        right: 0
+
+    &__control::before
+        content: ''
+        display: inline-block
+        width: 20px
+        height: 20px
+        background: transparent no-repeat center center
+        background-size: 100% 100%
+
+    &__control_prev::before
+        background-image: url("")
+
+    &__control_next::before
+        background-image: url("")
+
+/* стили для индикаторов */
+
+    &__indicators
+        position: absolute
+        right: 0
+        bottom: 10px
+        left: 0
+        z-index: 15
+        display: flex
+        justify-content: center
+        padding-left: 0
+        margin-right: 15%
+        margin-left: 15%
+        list-style: none
+        margin-top: 0
+        margin-bottom: 0
+
+    &__indicators li
+        box-sizing: content-box
+        flex: 0 1 auto
+        width: 30px
+        height: 4px
+        margin-right: 3px
+        margin-left: 3px
+        text-indent: -999px
+        cursor: pointer
+        background-color: rgba(255, 255, 255, 0.5)
+        background-clip: padding-box
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+
+    &__indicators li.active
+        background-color: #fff
