@@ -183,7 +183,7 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
-  border: 1px solid #FF6A6A;
+  border: 1px solid #F16D7F;
   padding: 13.5px 38.5px;
   display: inline-block;
   margin-top: 63px;
@@ -191,10 +191,13 @@ a {
 
 .button {
   text-align: center;
+  margin-top: 48px;
+  margin-bottom: 95px;
 }
 .button__products:hover{
     color: #ffffff;
-    background-color: #F26376;
+    background-color:#FF6A6A;
+
   }
 
 
@@ -599,6 +602,53 @@ a {
   font-size: 14px
 }
 
+.dop__param__box{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 330px;
+  left: 396px
+}
+
+
+.param__trend{
+  height: 17px;
+  top: 274px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.param__size{
+  height: 17px;
+  top: 274px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E; 
+}
+
+.param__price{
+  height: 17px;
+  top: 274px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.dop__param__product{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 400px;
+  left: 360px
+}
+
+
+
+.indi__sort{
+  padding-left: 10px;
+}
+
 
 
 .product:hover {
@@ -621,19 +671,24 @@ a {
   background: url("../img/foto__collection"), url("../img/foto__collection") no-repeat center;
 }
 
-.hr {
-  border: 1px solid #EAEAEA;
-  width: 360px;
-}
+
 
 .menu__catalog {
   height: 601px;
   margin-bottom: 128px;
+  background: #FFFFFF;
 }
 
 .menu__product {
   background: #FFFFFF;
+  position: absolute;
+  border: 1px solid #EAEAEA;
+  width: 1141px;
+  height: 600px;
+  top: 935px;
 }
+
+
 
 .menu__product .heading__collection {
   font-weight: 300;
@@ -661,6 +716,9 @@ a {
   line-height: 17px;
   color: #5E5E5E;
   text-align: center;
+  width: 581px;
+  padding-left: 290px;
+  margin-bottom: 32px;
 }
 
 .menu__product .product__price {
@@ -668,6 +726,18 @@ a {
   text-align: center;
   margin-top: 32px;
   margin-bottom: 65px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+}
+.price__content{
+  border: 1px solid #EAEAEA;
+  position: absolute;
+  Top: 1200px;
+  Left: 480px;
+  width: 641px;
+
 }
 
 .menu__product .param__product {
